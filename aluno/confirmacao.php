@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="voltar">
-        <a href="../login-aluno.html">
+        <a href="../login-aluno.php">
             <img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon">
         </a>
     </div>
