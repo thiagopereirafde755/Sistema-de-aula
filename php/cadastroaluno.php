@@ -51,8 +51,8 @@ if (mysqli_stmt_execute($stmt)) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sistemadeaula123@gmail.com';
-        $mail->Password = 'iujs lzli qobs yunk';
+        $mail->Username = 'email@gmail.com';
+        $mail->Password = 'senha de app aqui';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
