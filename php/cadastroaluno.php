@@ -26,9 +26,12 @@ if (mysqli_stmt_num_rows($stmt) > 0) {
     exit(); 
 }
 
+// Gerar o hash da senha
+$senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+
 $sql_aluno = "INSERT INTO aluno (nome, email, senha) VALUES (?, ?, ?)";
 $stmt = mysqli_prepare($conexao, $sql_aluno);
-mysqli_stmt_bind_param($stmt, 'sss', $nome, $email, $senha);
+mysqli_stmt_bind_param($stmt, 'sss', $nome, $email, $senha_hash);
 
 if (mysqli_stmt_execute($stmt)) {
     $aluno_id = mysqli_insert_id($conexao); 
@@ -51,8 +54,8 @@ if (mysqli_stmt_execute($stmt)) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'email@gmail.com';
-        $mail->Password = 'senha de app aqui';
+        $mail->Username = 'sistemadeaula123@gmail.com';
+        $mail->Password = 'iujs lzli qobs yunk';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -75,7 +78,6 @@ if (mysqli_stmt_execute($stmt)) {
         <p><em>Desenvolvido por Thiago Pereira</em></p>
     </body>
 </html>
-
     ";        
         $mail->send();
 
@@ -84,27 +86,20 @@ if (mysqli_stmt_execute($stmt)) {
                alert('Cadastro realizado com sucesso! Verifique seu email para ter o código de confirmação.');
                window.location.href = '../aluno/confirmacao.php?email=$email'; 
               </script>";
-            // echo "<script type='text/javascript'>
-    //    alert('Cadastro realizado com sucesso! Verifique o seu email.');
-                // window.location.href = '../login-aluno.php'; 
-            //   </script>";
 
     } catch (Exception $e) {
             echo "<script type='text/javascript'>
                     alert('Erro ao enviar o email: " . $mail->ErrorInfo . "');
                       window.location.href = '../cadastroalunor.php'; 
                   </script>";
-        }
-        
+    }
 
-} 
-else {
+} else {
     echo "<script type='text/javascript'>
             alert('Erro ao cadastrar aluno: " . mysqli_error($conexao) . "');
             window.location.href = '../cadastroalunor.php'; 
           </script>";
 }
-
 
 mysqli_close($conexao);
 ?>
