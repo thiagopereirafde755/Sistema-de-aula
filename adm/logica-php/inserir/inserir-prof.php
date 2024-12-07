@@ -4,7 +4,7 @@ require ('../../../php/conexao.php');
 $nome = $_POST['nome']; 
 $senha = $_POST['senha']; 
 $email = $_POST['email'];
-
+$senha_hash = password_hash($senha, PASSWORD_DEFAULT); 
 $sql_check = "SELECT * FROM professores WHERE email = '$email'";
 $result = mysqli_query($conexao, $sql_check);
 
@@ -14,7 +14,7 @@ if (mysqli_num_rows($result) > 0) {
             window.location.href = '../../professor.php'; 
           </script>";
 } else {
-    $sql = "INSERT INTO professores (nome, email, senha) VALUES ('$nome','$email', '$senha')";
+    $sql = "INSERT INTO professores (nome, email, senha) VALUES ('$nome','$email', '$senha_hash')";
 
     if (mysqli_query($conexao, $sql)) {
        echo "<script type='text/javascript'>
