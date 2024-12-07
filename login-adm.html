@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/barra-rolagem.css">
+    <title>login-adm</title>
+</head>
+<body>
+    <div class="voltar">
+        <a href="index.html">
+            <img src="img/botao-voltar1.png" alt="Botão voltar" class="volta-icon">
+        </a>
+    </div>
+   
+    <main>
+        <h1>Entrar</h1>
+        <form method="post" action="php/adm.php">
+            <div class="a">
+                <div class="input">
+                    <input type="text" placeholder="usuário" class="input-caixa" name="nome" required>                    
+                    <img src="img/user.png" alt="Ícone de usuário">
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="Senha" class="input-caixa" name="senha" required>
+                    <img src="img/senha.png" alt="Ícone de senha">
+               
+            </div>
+            <div class="entrar">
+                <input type="submit" value="Entrar">
+            </div>
+        </form>
+    </main>
+    <footer class="creditos">
+        <p style="color: rgb(0, 0, 0)">Desenvolvido por:Thiago Pereira</p>
+    </footer>
+</body>
+</html>
