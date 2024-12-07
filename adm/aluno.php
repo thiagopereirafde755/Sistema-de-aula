@@ -54,59 +54,7 @@ $result = mysqli_query($conexao, $sql);
 </div>
 <h2 style=" text-align: center; justify-content: center;">Dados da Tabela de aluno</h2>
 
-<h3 style="text-align: center;"> 
-<a href="javascript:void(0);" id="openModal"><img src="../img/adicionar.png"  class="adicionar-ic"></a>
-</h3>
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-<h3 style=" text-align: center;
-   
-   justify-content: center;">Adicionar Novo aluno</h3>
-<form action="logica-php/inserir/cadastroaluno.php" method="post" class="tabela">
-     <div class="a">
-                <div class="input">
-                <label for="nome">Nome:</label>
-                    <input type="text" placeholder="Usuário" class="input-caixa" name="nome" required>
-                </div>
-                <div class="input">
-                <label for="email">Email:</label>
-                    <input type="email" placeholder="email" class="input-caixa" name="email" required>
-                </div>
-                <div class="input">
-                <label for="senha">Senha:</label>    
-                <input type="password" placeholder="Senha" class="input-caixa" name="senha" required>
-                </div>
-                <div class="input">
-                    <label for="turma">Escolha a turma:</label>
-                    <select name="turma" class="input-caixa" required>
-                        <option value="" disabled selected>Selecione...</option>
-                        <?php
-                       
-                       require '../php/conexao.php';
-                        $sql = "SELECT id, nome FROM salas";
-                        $resultado = mysqli_query($conexao, $sql);
-
-                        if (mysqli_num_rows($resultado) > 0) {
-                            while($row = mysqli_fetch_assoc($resultado)) {
-                                echo "<option value='" . $row['id'] . "'>" . $row['nome'] . "</option>";
-                            }
-                        } else {
-                            echo "<option value='' disabled>Nenhuma turma encontrada</option>";
-                        }
-
-                        mysqli_close($conexao);
-                        ?>
-                    </select>
-                </div>
-            </div>
-    <div class="entrar">
-                <input type="submit" value="Cadastrar">
-                </div>
-        </form>
-    </div>
-</div>
 <table border="1">
     <thead>
         <tr>
@@ -136,13 +84,13 @@ $result = mysqli_query($conexao, $sql);
                     </tr>";
             }
         } else {
-            echo "<tr><td colspan='6'>Nenhum dado encontrado</td></tr>"; // Alterei para 6 colunas
+            echo "<tr><td colspan='6'>Nenhum dado encontrado</td></tr>"; 
         }
         ?>
     </tbody>
 </table>
 
-<script src="../js/modal.js"></script>
+
 </body>
 </html>
 
