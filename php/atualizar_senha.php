@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_query($conexao, $query);
         echo "<script type='text/javascript'>
         alert('Senha Alterada com sucesso!');
-        window.location.href = '../login-aluno.html'; 
+        window.location.href = '../login-aluno.php'; 
       </script>";
         // header('Location: ../login-aluno.html');
     } else {
