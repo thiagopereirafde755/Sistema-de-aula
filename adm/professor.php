@@ -62,30 +62,7 @@ $result = mysqli_query($conexao, $sql);
     </div>
 </div>
 
-<!--atualizar-->
-<div id="updateModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeUpdateModal">&times;</span>
-        <h3 style=" text-align: center; justify-content: center;">Atualizar Professor</h3>
-        <form action="logica-php/atualizar/atualizar-prof.php" method="post" class="tabela" id="updateForm">
-            <input type="hidden" id="update-id" name="id">
 
-            <label for="update-nome">Nome:</label>
-            <input type="text" id="update-nome" name="nome" placeholder="Nome" class="input-caixa" required>
-
-            <label for="update-email">Email:</label>
-            <input type="email" id="update-email" name="email" placeholder="Email" class="input-caixa" required>
-
-            <label for="update-senha">Senha:</label>
-            <input type="password" id="update-senha" name="senha" placeholder="Senha" class="input-caixa" required>
-            <br>
-
-            <div class="entrar">
-                <input type="submit" value="Atualizar">
-            </div>
-        </form>
-    </div>
-</div>
 
 
 <table border="1">
@@ -111,9 +88,7 @@ $result = mysqli_query($conexao, $sql);
                             <a href='logica-php/deletar/deletar-prof.php?id=" . $row["id"] . "'>
                                 <img src='../img/excluir.png' alt='Excluir' style='width: 50px; height: 30px; vertical-align: middle;'>
                             </a>
-                            <a href='javascript:void(0);' onclick='mostrarFormAtualizar(" . $row["id"] . ", \"" . $row["nome"] . "\", \"" . $row["email"] . "\")'>
-                                <img src='../img/1editar.png' alt='Atualizar' style='margin-left: 12px;width: 50px; height: 30px; vertical-align: middle;'>
-                            </a>
+                           
                         </td>
                     </tr>";
             }
@@ -123,35 +98,7 @@ $result = mysqli_query($conexao, $sql);
         ?>
     </tbody>
 </table>
-
-<script>
-document.getElementById('openModal').onclick = function() {
-    document.getElementById('myModal').style.display = "block";
-}
-document.getElementById('closeModal').onclick = function() {
-    document.getElementById('myModal').style.display = "none";
-}
-function mostrarFormAtualizar(id, nome, email) {
-    var modal = document.getElementById('updateModal');
-    document.getElementById('update-id').value = id;
-    document.getElementById('update-nome').value = nome;
-    document.getElementById('update-email').value = email;
-    modal.style.display = "block";
-}
-document.getElementById('closeUpdateModal').onclick = function() {
-    document.getElementById('updateModal').style.display = "none";
-}
-window.onclick = function(event) {
-    var modal = document.getElementById('myModal');
-    var updateModal = document.getElementById('updateModal');
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    if (event.target == updateModal) {
-        updateModal.style.display = "none";
-    }
-}
-</script>
+<script src="../js/modal.js"></script>
 
 </body>
 </html>
