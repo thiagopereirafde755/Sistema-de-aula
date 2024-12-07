@@ -1,0 +1,40 @@
+body {
+   
+    background-color: #ECEBF3; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    border-radius: 10px
+}
+
+
+.header a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    position: absolute;
+    left: 20px;
+}
+
+.volta-icon {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 40px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.volta-icon:hover {
+    transform: scale(1.5);
+}

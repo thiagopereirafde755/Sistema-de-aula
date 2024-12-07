@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; 
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar {
+    width: 260px;
+  
+    height: 100vh;
+    padding-top: 80px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20; 
+   
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+}
+#materiaAtiva {
+    margin-top: 60px;  
+    font-weight: bold;  
+    font-size: 18px;  
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    padding-top: 20px; 
+    padding-left: 10px;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20; 
+  
+    overflow-y: auto;  
+}
+.profile {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-img {
+    width: 40px;  
+    height: 40px;
+    border-radius: 50%;  
+    object-fit: cover;  
+    border: 2px solid #fff; 
+}
+
+.tooltip {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff; 
+    color: #333; 
+    padding: 10px;
+    border-radius: 8px;
+    display: none; 
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 10;
+    white-space: nowrap; 
+}
+
+.profile:hover .tooltip {
+    display: block;
+}
+
+.tooltip span {
+    display: inline; 
+}
+
+
+.dropdown-btn:hover,
+.dropdown-btn:focus 
+{
+    background-color: #4e4e4e;
+    padding-left: 30px;
+}
+.dropdown-btn {
+    background-color: #0C120C;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.sair {
+    display: flex;
+    align-items: center; 
+    margin-top: auto; 
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: start; 
+}
+
+.sair img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px; 
+}
+.sidebar::-webkit-scrollbar {
+    width: 14px; 
+}
+.sidebar::-webkit-scrollbar-track {
+    background: #333; 
+    border-radius: 10px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #333; 
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+.sidebar::-webkit-scrollbar-button {
+    display: none;
+}
