@@ -35,8 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'sistemadeaula123@gmail.com';
-            $mail->Password = 'iujs lzli qobs yunk';
+           $mail->Username = 'seu email';
+            $mail->Password = 'senha de app';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
