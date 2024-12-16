@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Aula</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
     <link rel="stylesheet" href="css/barra-rolagem.css">
 </head>
 <body>
-    <style>body{background-color:#ECEBF3}
-        main {
-    width: 300px;
-    border-radius: 15px;
-    background-color: #ffffff;
-    text-align: center;
-    margin: auto; 
-    padding: 20px; 
-}
-
-    </style>
     <main>
         <h1>Entrar como</h1>
         <a href="login-aluno.php" class="botao">Aluno</a>
-        <br><br>
+        <hr style="margin: 20px 0; color: black;">
         <a href="login-professor.html" class="botao">Professor</a>
-        <br><br>
-        <a href="login-adm.html" class="botao">ADM</a>
+        <hr style="margin: 20px 0; color: black;">
+        <a href="login-adm.html" id="atividadesLink" class="botao">ADM</a>
     </main>
     <footer class="creditos">
         <p style="color: rgb(0, 0, 0)">Desenvolvido por:Thiago Pereira</p>
     </footer>
+
+    <script>
+        window.onload = function() {
+            // Seleciona o link da página ADM
+            var atividadesLink = document.getElementById('atividadesLink');
+            
+            // Verifica a largura da tela
+            if (window.innerWidth < 768) {
+                // Desabilita o link e exibe a mensagem de alerta
+                atividadesLink.href = '#'; 
+                atividadesLink.addEventListener('click', function(e) {
+                    e.preventDefault(); 
+                    alert("Esta página só é possível acessar em um computador.");
+                    window.location.href = 'index.html'; // Redireciona para a página inicial
+                });
+            }
+        }
+    </script>
 </body>
 </html>
