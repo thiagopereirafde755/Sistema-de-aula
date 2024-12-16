@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/style-mobile.css">
     <link rel="stylesheet" href="../css/barra-rolagem.css">
     <title>Confirmação de Código</title>
 </head>
@@ -31,9 +32,12 @@
         <h3>Aluno</h3>
         <form method="post" action="../php/verificar_codigo2.php">
             <div class="a">
-                <input type="hidden" name="email" value="<?php echo htmlspecialchars($_GET['email']); ?>" required>
-                <div class="input">
+               
+            <input type="hidden" name="email" value="<?php echo htmlspecialchars($_GET['email']); ?>" required>
+            
+            <div class="input">
                     <input type="text" name="codigo" placeholder="Digite o código" class="input-caixa" required>
+                    <img src="../img/marca-de-verificacao.png" alt="Ícone de usuário">
                 </div>
             </div>
             <div class="entrar">

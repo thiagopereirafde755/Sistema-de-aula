@@ -38,7 +38,7 @@ function getSalaName($atividade_id) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades Enviadas</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/tables.css">
     <link rel="stylesheet" href="../css/pesquisa.css">
@@ -67,7 +67,7 @@ function getSalaName($atividade_id) {
     <table border="1" style="text-align: center;">
         <thead>
             <tr>
-                <th>ID</th>
+             
                 <th>Matéria</th>
                 <th>Sala</th>
                 <th>Descrição</th>
@@ -95,7 +95,7 @@ function getSalaName($atividade_id) {
             if (mysqli_num_rows($result_atividades) > 0) {
                 while ($atividade = mysqli_fetch_assoc($result_atividades)) {
                     echo '<tr>';
-                    echo '<td>' . $atividade['id'] . '</td>';
+                   
                     echo '<td>' . getMateriaName($atividade['materia_id']) . '</td>';
 
                    

@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
     <link rel="stylesheet" href="css/barra-rolagem.css">
     <title>login-professor</title>
 </head>
 <body>
+    <style>@media only screen and (max-width: 600px) {
+        .volta-icon:hover {
+            transform: none;
+        }}
+</style>
     <div class="voltar">
         <a href="index.html">
             <img src="img/botao-voltar1.png" alt="Botão voltar" class="volta-icon">
         </a>
     </div>
-    <main>
+    <main style="margin-top: 23px;">
         <h1>Entrar</h1>
         <form method="post" action="php/login-professor.php">
             <div class="a">

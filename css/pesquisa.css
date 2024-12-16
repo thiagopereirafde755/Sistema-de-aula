@@ -17,7 +17,7 @@
     transition: border-color 0.3s ease-in-out;
 }
 .search-input:focus {
-    border-color: #4285f4;
+    border-color: #000000;
 }
 .search-button {
     background-color: transparent;

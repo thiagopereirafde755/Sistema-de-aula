@@ -1,0 +1,121 @@
+@media only screen and (max-width: 600px) {
+    .botao {
+        width: 100%; 
+        font-size: 14px; 
+        padding: 12px;
+    }
+    .creditos {
+        padding: 5px; 
+    }
+}
+@media only screen and (max-width: 600px) {
+    .volta-icon:hover {
+        transform: none;
+    }
+    main {
+        width: 90%; 
+        padding: 15px;
+        margin: auto;
+    }
+    
+    .voltar {
+        text-align: left;
+        margin: 10px;
+    }
+    
+    .volta-icon {
+        width: 35px; 
+        height: auto;
+        transition: transform 0.4s ease;
+    }
+    
+    .volta-icon:hover {
+        transform: scale(1.2); 
+    }
+    
+    .a img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .input {
+        margin-bottom: 15px;
+        position: relative;
+    }
+    
+    .input-caixa {
+        width: 100%; 
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    
+    .entrar input {
+        width: 100%; 
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    
+    a {
+        font-size: 14px; 
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .creditos {
+        padding: 10px;
+        font-size: 12px; 
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 14px; 
+    }
+    
+    main p a {
+        font-size: 14px;
+    }
+    
+    
+    .input {
+        position: relative; 
+        margin-bottom: 20px;
+    }
+    
+    .input img {
+        position: absolute; 
+        left: 10px; 
+        top: 50%;
+        transform: translateY(-50%); 
+        width: 20px; 
+        height: 20px;
+    }
+    
+    .input-caixa {
+        width: 100%;
+        padding: 12px 12px 12px 40px; 
+        font-size: 16px;
+        border-radius: 10px;
+        box-sizing: border-box; 
+    }
+    
+    .entrar input {
+        width: 100%; 
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .entrar input {
+
+        cursor: none;
+        transition: none;
+    }
+    
+    .entrar input:hover {
+        transform: none; 
+        color: none;
+        background-color: none;
+    }
+    }

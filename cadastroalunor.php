@@ -6,8 +6,8 @@ require 'php/excluir_registros.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style-mobile.css">
     <link rel="stylesheet" href="css/barra-rolagem.css">
     <title>Cadastro-aluno</title>
 </head>
@@ -62,7 +62,7 @@ require 'php/excluir_registros.php';
             </div>
         </form>
         <div class="cadastro">
-            <p>Já tem uma conta? <a href="login-aluno.html">Entrar</a></p>
+            <p>Já tem uma conta? <a href="login-aluno.php">Entrar</a></p>
         </div>
     </main>
     <footer class="creditos">

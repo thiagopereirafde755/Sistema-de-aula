@@ -29,7 +29,8 @@ $result = mysqli_query($conexao, $sql);
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/pesquisa.css">
     <link rel="stylesheet" href="../css/tables.css">
-    <link rel="stylesheet" href="../css/modal1.css">
+    <link rel="stylesheet" href="../css/modal-form.css">
+ 
 </head>
 <body>
     <style>body {
@@ -39,7 +40,7 @@ $result = mysqli_query($conexao, $sql);
 </style>
 
 <div class="header">
-    <a href="javascript:history.back();"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
+<a href="pagina_adm.php"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
 
 
     <form method="GET" action="" class="search-form">
@@ -49,12 +50,7 @@ $result = mysqli_query($conexao, $sql);
             <img src="../img/search-icon.png" alt="Buscar" class="search-icon">
         </button>
     </form>
-
-   
-
 </div>
-
-
 <h2 style=" text-align: center; justify-content: center;">Dados da Tabela de Administrado</h2>
 
 <h3 style="text-align: center;"> 
@@ -72,9 +68,7 @@ $result = mysqli_query($conexao, $sql);
     <label for="senha">Senha:</label>
     <input type="password" id="senha" placeholder="senha" class="input-caixa" name="senha" required>
     <br>
-    <div class="entrar">
-                <input type="submit" value="Cadastrar">
-                </div>
+    <button type="submit" class="botao2">Cadastrar</button>
         </form>
     </div>
 </div>

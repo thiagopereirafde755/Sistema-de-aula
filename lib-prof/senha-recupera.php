@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/style-mobile.css">
     <link rel="stylesheet" href="../css/barra-rolagem.css">
     <title>Recuperar Senha</title>
 </head>
@@ -14,20 +15,10 @@
         </a>
     </div>
    
-<style>body{background-color:#ECEBF3}
-        main {
-    width: 300px;
-    border-radius: 15px;
-    background-color: #ffffff;
-    text-align: center;
-    margin: auto; 
-    padding: 20px; 
-}
 
-    </style>
+
     <main>
-    <h2>Recuperar Senha</h2>
-    <h2>Professor</h2>
+    <h3>Recuperar Senha do Professor</h3>
     <form method="post" action="enviar_email.php">
     <div class="a">
                 <div class="input">

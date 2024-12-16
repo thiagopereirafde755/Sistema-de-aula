@@ -18,7 +18,7 @@ if (isset($_SESSION['aluno_id'])) {
         exit;
     }
 } else {
-    header("Location: ../login-aluno.html"); 
+    header("Location: ../login-aluno.php"); 
     exit;
 }
 ?>

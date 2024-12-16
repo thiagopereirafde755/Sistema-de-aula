@@ -1,0 +1,73 @@
+body {
+    background-color:#ECEBF3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    width: 300px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .voltar img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .volta-icon {
+        width: 30px;
+    }
+
+    .modal-content {
+        width: 90%; 
+    }
+
+    .botao2 {
+        width: 100%; 
+    }
+
+    .input-caixa {
+        max-width: 100%; 
+    }
+
+    h4 {
+        font-size: 18px; 
+    }
+
+    .modal-content input[type="text"],
+    .modal-content input[type="password"],
+    .modal-content input[type="email"],
+    .modal-content input[type="number"] {
+        max-width: 100%; 
+    }
+
+    .botao2 {
+        font-size: 15px;
+    }
+
+
+    .voltar img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .modal-content {
+        padding: 10px;
+    }
+}

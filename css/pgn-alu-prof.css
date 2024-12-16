@@ -1,0 +1,41 @@
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 20;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .sidebar {
+        transform: translateX(-100%); 
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar.active {
+        transform: translateX(0); 
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #atividadeContainer {
+        margin-top: 80px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: relative; 
+        z-index: 10; 
+    }
+}

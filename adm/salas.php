@@ -28,11 +28,11 @@ $result = mysqli_query($conexao, $sql);
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/pesquisa.css">
     <link rel="stylesheet" href="../css/tables.css">
-    <link rel="stylesheet" href="../css/modal1.css">
+    <link rel="stylesheet" href="../css/modal-form.css">
 </head>
 <body>
 <div class="header">
-    <a href="javascript:history.back();"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
+    <a href="pagina_adm.php"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
 
 
     <form method="GET" action="" class="search-form">
@@ -43,7 +43,6 @@ $result = mysqli_query($conexao, $sql);
     </form>
 </div>
 <h2 style=" text-align: center; justify-content: center;">Dados da Tabela de sala</h2>
-<h4 class="add">Adicionar</h4>
 <h3 style="text-align: center;"> 
 <a href="javascript:void(0);" id="openModal"><img src="../img/adicionar.png"  class="adicionar-ic"></a>
 </h3>
@@ -57,9 +56,7 @@ $result = mysqli_query($conexao, $sql);
     <label for="nome" >Nome sala:</label>
     <input type="text" id="nome" placeholder="sala" class="input-caixa" name="nome" required>
     <br>
-    <div class="entrar">
-                <input type="submit" value="Cadastrar">
-                </div>
+    <button type="submit" class="botao2">Cadastrar</button>
         </form>
     </div>
 </div>

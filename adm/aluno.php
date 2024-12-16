@@ -39,7 +39,7 @@ $result = mysqli_query($conexao, $sql);
 } 
 </style>
 <div class="header">
-    <a href="javascript:history.back();"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
+<a href="pagina_adm.php"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
 
 
     <form method="GET" action="" class="search-form">
@@ -53,6 +53,7 @@ $result = mysqli_query($conexao, $sql);
 
 </div>
 <h2 style=" text-align: center; justify-content: center;">Dados da Tabela de aluno</h2>
+
 
 
 <table border="1">
@@ -84,13 +85,13 @@ $result = mysqli_query($conexao, $sql);
                     </tr>";
             }
         } else {
-            echo "<tr><td colspan='6'>Nenhum dado encontrado</td></tr>"; 
+            echo "<tr><td colspan='6'>Nenhum dado encontrado</td></tr>"; // Alterei para 6 colunas
         }
         ?>
     </tbody>
 </table>
 
-
+<script src="../js/modal.js"></script>
 </body>
 </html>
 

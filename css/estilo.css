@@ -1,0 +1,133 @@
+:root {
+    --color-background: #ffffff;
+    --color-main: #ffffff;
+    --color-button: #87848d;
+    --color-button-hover: #7a7a7a;
+    --color-shadow: #b3b1b6;
+    --color-white: #ffffff;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box; /* Melhora o controle de dimensionamento */
+}
+
+body {
+    background-color:#ECEBF3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
+        main {
+    width: 300px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: auto; 
+    padding: 20px; 
+}
+
+.botao {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    background-color: #89858f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-color: #535158;
+}
+
+.creditos {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+}
+
+.logo img {
+    width: 120px; 
+    height: 120px; 
+}
+
+.input {
+    position: relative; /* Define o contêiner do input como relativo */
+    margin-bottom: 20px;
+}
+
+.input img {
+    position: absolute; 
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 20px;
+}
+
+.input-caixa {
+    width: 100%;
+    padding: 12px 12px 12px 40px; 
+    font-size: 16px;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+.entrar input {
+    width: 100%; 
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.voltar img {
+    margin: 20px;
+    width: 55px;
+    height: 55px;
+}
+.botao{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+.volta-icon {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 40px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.volta-icon:hover {
+    transform: scale(1.5);
+}
+.credito p{
+    color: #ffffff;
+}
+.entrar input {
+
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.entrar input:hover {
+    transform: scale(1.1); 
+    color: #FFFFFF;
+    background-color: #535158;
+}

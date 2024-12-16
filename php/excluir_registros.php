@@ -1,7 +1,7 @@
 <?php
 require 'conexao.php';
 
-$tempo_limite = 0;
+$tempo_limite = 15;
 
 $sql_delete_referencias = "DELETE FROM alunos_salas WHERE aluno_id IN (SELECT id FROM aluno WHERE confirmado = 0 AND TIMESTAMPDIFF(MINUTE, data_registro, NOW()) > ?)";
 $stmt_referencias = mysqli_prepare($conexao, $sql_delete_referencias);

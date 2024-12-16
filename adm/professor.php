@@ -20,12 +20,12 @@ $result = mysqli_query($conexao, $sql);
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/pesquisa.css">
     <link rel="stylesheet" href="../css/tables.css">
-    <link rel="stylesheet" href="../css/modal1.css">
+    <link rel="stylesheet" href="../css/modal-form.css">
 </head>
 <body>
 
 <div class="header">
-    <a href="javascript:history.back();"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
+<a href="pagina_adm.php"><img src="../img/botao-voltar1.png" alt="Botão voltar" class="volta-icon"></a>
     <form method="GET" action="" class="search-form">
         <input type="text" name="search" id="search" class="search-input" placeholder="Pesquisar por nome do Professor" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>">
         <button type="submit" class="search-button">
@@ -55,9 +55,7 @@ $result = mysqli_query($conexao, $sql);
             <label for="senha">Senha:</label>
             <input type="password" id="senha" class="input-caixa" name="senha" placeholder="Senha" required>
             <br>
-            <div class="entrar">
-                <input type="submit" value="Cadastrar">
-            </div>
+            <button type="submit" class="botao2">Cadastrar</button>
         </form>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../php/conexao.php'; // Arquivo de conexão com o banco
+require '../php/conexao.php'; 
 
 if (isset($_POST['alterar_senha'])) {
     $email = mysqli_real_escape_string($conexao, $_POST['email']);

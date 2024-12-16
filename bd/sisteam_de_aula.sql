@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3316
--- Tempo de geração: 07/12/2024 às 18:06
+-- Tempo de geração: 16/12/2024 às 19:16
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -56,7 +56,8 @@ CREATE TABLE `aluno` (
   `data_geracao_codigo` datetime DEFAULT NULL,
   `codigo_confirmacao` varchar(6) DEFAULT NULL,
   `confirmado` tinyint(1) DEFAULT 0,
-  `data_registro` datetime DEFAULT current_timestamp()
+  `data_registro` datetime DEFAULT current_timestamp(),
+  `foto_perfil` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -121,7 +122,8 @@ CREATE TABLE `professores` (
   `email` varchar(100) DEFAULT NULL,
   `senha` varchar(255) DEFAULT NULL,
   `codigo_recuperacao` varchar(6) DEFAULT NULL,
-  `data_geracao_codigo` datetime DEFAULT NULL
+  `data_geracao_codigo` datetime DEFAULT NULL,
+  `foto_perfil` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
