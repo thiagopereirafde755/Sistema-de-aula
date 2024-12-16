@@ -2,7 +2,7 @@
 require '../php/conexao.php';
 
 if (!isset($_SESSION['professor_id'])) {
-    header("Location: login.php"); 
+    header("Location: ../login-professor.html"); 
 }
 
 $professor_id = $_SESSION['professor_id'];
